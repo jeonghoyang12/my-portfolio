@@ -11,14 +11,13 @@ import Link from "@mui/material/Link";
 const useStyles = makeStyles({
   container: {
     paddingTop: "200px",
-    textAlign: "center",
-    justifyContent: "center",
-    alignItems: "center",
     position: "static",
+    maxWidth: "700px",
   },
   typography: {
     paddingTop: "20px",
     color: "#707070",
+    fontSize: "18px",
   },
   divider: {
     paddingTop: "50px",
@@ -27,29 +26,32 @@ const useStyles = makeStyles({
     paddingTop: "20px",
     color: "#707070",
   },
+  navText: {
+    fontSize: "10px",
+  },
 });
 
 function NavRow() {
   return (
     <React.Fragment>
-      <Grid item xs={12} sm={3}>
+      <Grid item xs="auto" xs={6} sm={3}>
         <Link underline="none" color="#707070" href="#">
-          <Typography>👤 ABOUT</Typography>
+          <Typography fontSize="13px">👤 ABOUT</Typography>
         </Link>
       </Grid>
-      <Grid item xs={12} sm={3}>
+      <Grid item xs="auto" xs={6} sm={3}>
         <Link underline="none" color="#707070" href="#">
-          <Typography>🧑‍💻 EXPERIENCES</Typography>
+          <Typography fontSize="13px">💼 EXPERIENCES</Typography>
         </Link>
       </Grid>
-      <Grid item xs={12} sm={3}>
+      <Grid item xs="auto" xs={6} sm={3}>
         <Link underline="none" color="#707070" href="#">
-          <Typography>💻 SKILLS</Typography>
+          <Typography fontSize="13px">💻 SKILLS</Typography>
         </Link>
       </Grid>
-      <Grid item xs={12} sm={3}>
+      <Grid item xs="auto" xs={6} sm={3}>
         <Link underline="none" color="#707070" href="#">
-          <Typography>📋 PROJECTS</Typography>
+          <Typography fontSize="13px">📋 PROJECTS</Typography>
         </Link>
       </Grid>
     </React.Fragment>
@@ -63,18 +65,21 @@ export default function Home() {
     <React.Fragment>
       <CssBaseline />
       <Container className={classes.container} maxWidth="sm">
+        <Typography variant="h4" style={{ paddingBottom: "10px" }}>
+          🧑‍💻
+        </Typography>
         <Typography variant="h4">
-          <strong>Kevin Yang</strong>
+          <strong>Hi!</strong>
         </Typography>
         <Typography className={classes.typography} variant="h6">
-          I am a software engineer,
+          I am <strong>Kevin</strong>, software engineer,
           <br />
           currently studying computer science in Ohio, United States.
         </Typography>
         <Divider className={classes.divider} />
         <Box sx={{ flexGrow: 1 }}>
-          <Grid className={classes.nav} container spacing={1} sx={2}>
-            <Grid container item sx={3}>
+          <Grid className={classes.nav} container spacing={3}>
+            <Grid container item sx={1} spacing={3}>
               <NavRow />
             </Grid>
           </Grid>

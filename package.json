@@ -8,11 +8,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.6",
+    "@mui/styles": "^5.2.3",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-router-hash-link": "^2.4.3",
+    "react-typewriter-effect": "^1.1.0",
+    "react-typing-effect": "^2.0.5"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.2",
     "eslint": "8.5.0",
     "eslint-config-next": "12.0.7"
   }

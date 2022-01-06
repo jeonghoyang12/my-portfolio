@@ -8,6 +8,20 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
+const ButtonMailto = ({ mailto, label }) => {
+  return (
+    <Link
+      to="#"
+      onClick={(e) => {
+        window.location = mailto;
+        e.preventDefault();
+      }}
+    >
+      {label}
+    </Link>
+  );
+};
+
 const useStyles = makeStyles({
   bodyText: {
     paddingTop: "15px",

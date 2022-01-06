@@ -20,7 +20,6 @@ export default function NavRow() {
             e.preventDefault();
             about &&
               about.scrollIntoView({ behavior: "smooth", block: "start" });
-            window.history.pushState("about", "about", "/about");
           }}
         >
           <Typography fontSize="13px">👤 ABOUT</Typography>
@@ -35,7 +34,6 @@ export default function NavRow() {
             e.preventDefault();
             about &&
               about.scrollIntoView({ behavior: "smooth", block: "start" });
-            window.history.pushState("exp", "exp", "/exp");
           }}
         >
           <Typography fontSize="13px">💼 EXPERIENCES</Typography>
@@ -50,7 +48,6 @@ export default function NavRow() {
             e.preventDefault();
             about &&
               about.scrollIntoView({ behavior: "smooth", block: "start" });
-            window.history.pushState("skills", "skills", "/skills");
           }}
         >
           <Typography fontSize="13px">💻 SKILLS</Typography>
@@ -65,7 +62,6 @@ export default function NavRow() {
             e.preventDefault();
             about &&
               about.scrollIntoView({ behavior: "smooth", block: "start" });
-            window.history.pushState("projects", "projects", "/projects");
           }}
         >
           <Typography fontSize="13px">📋 PROJECTS</Typography>

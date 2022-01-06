@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
@@ -25,7 +26,7 @@ export default function Experiences() {
       <Divider style={{ paddingTop: "10px" }} />
 
       {/* N0.1 */}
-      <Grid container columnSpacing={12} style={{ paddingTop: "15px" }}>
+      {/* <Grid container columnSpacing={12} style={{ paddingTop: "15px" }}>
         <Grid item xs={8} lg>
           <Typography className={classes.mainText}>
             1. Technology class
@@ -49,10 +50,10 @@ export default function Experiences() {
           Scheduled and planned what to do for the students not Interested in{" "}
           tech during the Hackathon.
         </li>
-      </Typography>
+      </Typography> */}
 
       {/* No.2 */}
-      <Grid container columnSpacing={12} style={{ paddingTop: "25px" }}>
+      {/* <Grid container columnSpacing={12} style={{ paddingTop: "25px" }}>
         <Grid item xs={8} lg>
           <Typography className={classes.mainText}>
             2. CS club in high school
@@ -72,13 +73,20 @@ export default function Experiences() {
         <li style={{ marginLeft: "20px" }}>
           Developed a hide-and-seek game using Unity.
         </li>
-      </Typography>
+      </Typography> */}
 
       {/* No.3 */}
       <Grid container columnSpacing={12} style={{ paddingTop: "25px" }}>
         <Grid item xs={8} lg>
+          <Link
+            href="https://www.mckinleyrice.com/"
+            className={classes.mainText}
+            color="inherit"
+          >
+            1. McKinley & Rice
+          </Link>
           <Typography className={classes.mainText}>
-            3. Software engineer intern
+            Fullstack engineer intern
           </Typography>
         </Grid>
         <Grid item>
@@ -89,20 +97,20 @@ export default function Experiences() {
       </Grid>
       <Typography className={classes.bodyText}>
         <li style={{ marginLeft: "20px" }}>
-          Developed a front-end web of online shopping mall that sells
+          Developed a front end web of online shopping mall that sells
           Accessories like necklaces and bracelets using Html and CSS.
         </li>
         <li style={{ marginLeft: "20px" }}>
-          Maintained and fixed some front-end UI/UX bugs of the shopping Mall
+          Maintained and fixed some front-end UI/UX bugs of the shopping mall
           that sells clothes for kids using React JS and Python.
         </li>
         <li style={{ marginLeft: "20px" }}>
           Inspected bugs in video uploading app using Swift and Android Studio.
         </li>
         <li style={{ marginLeft: "20px" }}>
-          Built a UI/UX front-end web and back-end server of Korean dating App
-          using React JS and Django rest framework. Built admin app And
-          integrated with the user interface.
+          Built a UI/UX front-end web and back-end server of Korean dating web
+          application using React JS and Django rest framework. Built admin app
+          and integrated with the user interface.
         </li>
       </Typography>
     </section>

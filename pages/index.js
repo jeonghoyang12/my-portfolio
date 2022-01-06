@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
@@ -12,6 +11,7 @@ import About from "../components/About";
 import Experiences from "../components/Experiences";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 const useStyles = makeStyles({
   container: {
@@ -49,7 +49,7 @@ export default function Home() {
           variant="h6"
           style={{ fontSize: "15px", paddingTop: "20px" }}
         >
-          I like to build a server structure using back-end engineering, and
+          I like to build a server structure using back-end programming, and
           little bit of UI front-end programming.
         </Typography>
         <Divider className={classes.divider} />
@@ -66,6 +66,7 @@ export default function Home() {
         <Experiences />
         <Skills />
         <Projects />
+        <Footer />
       </Container>
     </React.Fragment>
   );

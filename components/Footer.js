@@ -1,48 +1,44 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
-import Grid from "@mui/material/Grid";
 
-const useStyles = makeStyles((theme) => ({
-  footer: {
-    width: `100%`,
-    position: "relative",
-    overflow: "hidden",
-    marginTop: "6em",
-    padding: "2em 0",
-  },
-  copyright: {
-    color: "black",
-    fontSize: "13px",
-    paddingTop: "10px",
-  },
-}));
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary">
+      {"© Copyright "}
+      {new Date().getFullYear()}{" "}
+      <Link color="inherit" href="/">
+        Kevin's portfolio
+      </Link>{" "}
+      {"."}
+    </Typography>
+  );
+}
 
 export default function Footer() {
-  const classes = useStyles();
   return (
-    <footer className={classes.footer}>
-      <Divider />
-      <Container maxWidth="lg">
-        <Grid
-          item
-          container
-          component={"a"}
-          target="_blank"
-          rel="nonreferrer noopener"
-          href="#"
-          justify="center"
-          style={{
-            textDecoration: "none",
-          }}
-        >
-          <Typography className={classes.copyright}>
-            &copy; 2022 Kevin Yang
-          </Typography>
-        </Grid>
-      </Container>
-    </footer>
+    <Box>
+      <CssBaseline />
+      <Box
+        component="footer"
+        sx={{
+          py: 3,
+          px: 2,
+          mt: "auto",
+          backgroundColor: (theme) =>
+            theme.palette.mode === "light"
+              ? theme.palette.grey[100]
+              : theme.palette.grey[800],
+        }}
+      >
+        <Container maxWidth="sm">
+          <Copyright />
+        </Container>
+      </Box>
+    </Box>
   );
 }

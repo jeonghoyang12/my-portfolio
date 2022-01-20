@@ -28,7 +28,10 @@ export default function NavRow() {
       <Grid item xs={12} sm={3}>
         <a
           href="/"
-          style={{ textDecoration: "none", color: "black" }}
+          style={{
+            textDecoration: "none",
+            color: "black",
+          }}
           onClick={(e) => {
             let about = document.getElementById("exp");
             e.preventDefault();

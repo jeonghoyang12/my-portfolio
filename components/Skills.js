@@ -29,7 +29,7 @@ export default function Skills() {
 
       {/* Back End programming */}
       <Typography style={{ paddingTop: "15px", fontSize: "15px" }}>
-        Back End programming languages & tools
+        Back end programming languages & tools
       </Typography>
 
       <Box sx={{ display: "flex", paddingTop: "10px" }}>
@@ -51,7 +51,7 @@ export default function Skills() {
 
       {/* Front End programming */}
       <Typography style={{ paddingTop: "25px", fontSize: "15px" }}>
-        Front End programming languages & tools
+        Front end programming languages & tools
       </Typography>
       <Box sx={{ display: "flex", paddingTop: "10px" }}>
         <Grid container spacing={1}>

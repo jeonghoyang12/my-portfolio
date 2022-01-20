@@ -8,20 +8,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
-const ButtonMailto = ({ mailto, label }) => {
-  return (
-    <Link
-      to="#"
-      onClick={(e) => {
-        window.location = mailto;
-        e.preventDefault();
-      }}
-    >
-      {label}
-    </Link>
-  );
-};
-
 const useStyles = makeStyles({
   bodyText: {
     paddingTop: "15px",
@@ -38,11 +24,15 @@ export default function About() {
       </Typography>
       <Divider style={{ paddingTop: "10px" }} />
       <Typography className={classes.bodyText}>
-        My name is Kevin or Jeongho Yang in Korean.
+        My name is <strong>Jeongho Yang</strong>, and I am also using{" "}
+        <strong>Kevin</strong> as English name.
       </Typography>
       <Typography className={classes.bodyText}>
-        I am a student majoring in cs at Bowling Green State University, Ohio,
-        United States.
+        I am a sophomore majoring in computer science at{" "}
+        <Link href="https://www.bgsu.edu/" color="inherit">
+          Bowling Green State University
+        </Link>
+        , Ohio, United States.
       </Typography>
       <Typography className={classes.bodyText}>
         I am interested and have some working experiences in back-end

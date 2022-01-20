@@ -12,7 +12,7 @@ function Copyright() {
       {"© Copyright "}
       {new Date().getFullYear()}{" "}
       <Link color="inherit" href="/">
-        Kevin's portfolio
+        Kevin&apos;s portfolio
       </Link>{" "}
       {"."}
     </Typography>

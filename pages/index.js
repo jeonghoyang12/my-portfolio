@@ -20,7 +20,6 @@ const useStyles = makeStyles({
     maxWidth: "700px",
   },
   typography: {
-    // paddingTop: "10px",
     fontWeight: "bold",
     fontSize: "28px",
   },
@@ -66,8 +65,8 @@ export default function Home() {
         <Experiences />
         <Skills />
         <Projects />
-        <Footer />
       </Container>
+      <Footer />
     </React.Fragment>
   );
 }

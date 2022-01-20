@@ -19,7 +19,7 @@ export default function About() {
   const classes = useStyles();
   return (
     <section id="about">
-      <Typography style={{ paddingTop: "250px", fontSize: "20px" }}>
+      <Typography style={{ paddingTop: "290px", fontSize: "20px" }}>
         <strong>👤 ABOUT</strong>
       </Typography>
       <Divider style={{ paddingTop: "10px" }} />

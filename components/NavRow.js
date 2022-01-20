@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 
 export default function NavRow() {
   useEffect(() => {
@@ -12,7 +13,7 @@ export default function NavRow() {
   return (
     <React.Fragment>
       <Grid item xs={12} sm={3}>
-        <a
+        <Link
           href="/"
           style={{ textDecoration: "none", color: "black" }}
           onClick={(e) => {
@@ -23,10 +24,10 @@ export default function NavRow() {
           }}
         >
           <Typography fontSize="13px">👤 ABOUT</Typography>
-        </a>
+        </Link>
       </Grid>
       <Grid item xs={12} sm={3}>
-        <a
+        <Link
           href="/"
           style={{
             textDecoration: "none",
@@ -40,10 +41,10 @@ export default function NavRow() {
           }}
         >
           <Typography fontSize="13px">💼 EXPERIENCES</Typography>
-        </a>
+        </Link>
       </Grid>
       <Grid item xs={12} sm={3}>
-        <a
+        <Link
           href="/"
           style={{ textDecoration: "none", color: "black" }}
           onClick={(e) => {
@@ -54,10 +55,10 @@ export default function NavRow() {
           }}
         >
           <Typography fontSize="13px">💻 SKILLS</Typography>
-        </a>
+        </Link>
       </Grid>
       <Grid item xs={12} sm={3}>
-        <a
+        <Link
           href="/"
           style={{ textDecoration: "none", color: "black" }}
           onClick={(e) => {
@@ -68,7 +69,7 @@ export default function NavRow() {
           }}
         >
           <Typography fontSize="13px">📋 PROJECTS</Typography>
-        </a>
+        </Link>
       </Grid>
     </React.Fragment>
   );

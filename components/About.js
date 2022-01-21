@@ -28,7 +28,7 @@ export default function About() {
         <strong>Kevin</strong> as English name.
       </Typography>
       <Typography className={classes.bodyText}>
-        I am a sophomore majoring in computer science at{" "}
+        I am a sophomore student majoring in computer science at{" "}
         <Link href="https://www.bgsu.edu/" color="inherit">
           Bowling Green State University
         </Link>

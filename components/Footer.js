@@ -4,7 +4,6 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
-import Divider from "@mui/material/Divider";
 
 function Copyright() {
   return (
@@ -12,8 +11,8 @@ function Copyright() {
       {"© Copyright "}
       {new Date().getFullYear()}{" "}
       <Link color="inherit" href="/">
-        Kevin&apos;s portfolio
-      </Link>{" "}
+        Jeongho Yang
+      </Link>
       {"."}
     </Typography>
   );

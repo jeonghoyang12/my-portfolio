@@ -33,7 +33,10 @@ export default function Skills() {
         return (
           <>
             {/* Back End programming */}
-            <Typography style={{ paddingTop: "15px", fontSize: "15px" }}>
+            <Typography
+              key={skill.firstTitle}
+              style={{ paddingTop: "15px", fontSize: "15px" }}
+            >
               {skill.firstTitle}
             </Typography>
             <Box sx={{ display: "flex", paddingTop: "10px" }}>
@@ -52,7 +55,10 @@ export default function Skills() {
               </Grid>
             </Box>
             {/* Front End programming */}
-            <Typography style={{ paddingTop: "25px", fontSize: "15px" }}>
+            <Typography
+              key={skill.secondTitle}
+              style={{ paddingTop: "25px", fontSize: "15px" }}
+            >
               {skill.secondTitle}
             </Typography>
             <Box sx={{ display: "flex", paddingTop: "10px" }}>

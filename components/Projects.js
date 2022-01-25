@@ -54,7 +54,10 @@ export default function Projects() {
       <Divider style={{ paddingTop: "10px" }} />
       {data.projects.map((project) => {
         return (
-          <Box sx={{ paddingTop: "35px", paddingBottom: "30px" }}>
+          <Box
+            key={project.name}
+            sx={{ paddingTop: "35px", paddingBottom: "30px" }}
+          >
             <Card className={classes.box}>
               <Image
                 src={project.placeholder}

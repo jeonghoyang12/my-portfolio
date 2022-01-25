@@ -29,7 +29,12 @@ export default function Experiences() {
       {data.experiences.map((experience) => {
         return (
           <>
-            <Grid container columnSpacing={12} sx={{ pt: "25px" }}>
+            <Grid
+              container
+              columnSpacing={12}
+              sx={{ pt: "25px" }}
+              key={experience.name}
+            >
               <Grid item xs={8} lg>
                 <Link
                   href={experience.link}

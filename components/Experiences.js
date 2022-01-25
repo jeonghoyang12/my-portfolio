@@ -55,7 +55,7 @@ export default function Experiences() {
             </Grid>
             {experience.description.map((des) => {
               return (
-                <Typography sx={{ fontSize: "14px", pt: "10px" }}>
+                <Typography key={des} sx={{ fontSize: "14px", pt: "10px" }}>
                   <li>{des}</li>
                 </Typography>
               );

@@ -43,7 +43,7 @@ export default function Skills() {
               <Grid container spacing={1}>
                 {skill.backend.map((back) => {
                   return (
-                    <Grid item>
+                    <Grid item key={back}>
                       <Box sx={{ ...commonStyles }}>
                         <Typography className={classes.boxText}>
                           {back}
@@ -65,7 +65,7 @@ export default function Skills() {
               <Grid container spacing={1}>
                 {skill.frontend.map((front) => {
                   return (
-                    <Grid item>
+                    <Grid item key={front}>
                       <Box sx={{ ...commonStyles }}>
                         <Typography className={classes.boxText}>
                           {front}

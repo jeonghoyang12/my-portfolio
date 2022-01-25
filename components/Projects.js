@@ -79,7 +79,7 @@ export default function Projects() {
                 <Grid container sx={{ pt: "5px" }} spacing={1}>
                   {project.tags.map((tag) => {
                     return (
-                      <Grid item>
+                      <Grid item key={tag}>
                         <Box sx={{ ...commonStyles }}>
                           <Typography className={classes.boxText}>
                             {tag}

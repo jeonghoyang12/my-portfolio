@@ -33,6 +33,7 @@ export const data = {
       name: "Online Korean dating platform",
       description:
         "Built a website for Korean dating platform using React JS and CSS. Created APIs using Python and Django Rest Framework and integrated with UI using Redux JS. Built also an admin web using React JS and integrated with UI also using Redux JS. APIs are created separately for UI and admin.",
+      // githubLink: "#"
       placeholder: Sister,
       tags: ["React JS", "CSS", "Redux JS", "Python", "Django Rest Framework"],
     },

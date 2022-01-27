@@ -63,13 +63,13 @@ export default function Projects() {
                 src={project.placeholder}
                 alt=""
                 minWidth={275}
-                onClick={handleOpen}
+                // onClick={handleOpen}
               />
-              <Modal open={open} onClose={handleClose}>
+              {/* <Modal open={open} onClose={handleClose}>
                 <Box className={classes.modalBox}>
                   <Image src={project.placeholder} alt="" />
                 </Box>
-              </Modal>
+              </Modal> */}
               <Divider />
               <CardContent>
                 <Typography sx={{ fontWeight: "bold", fontSize: "20px" }}>
@@ -93,16 +93,18 @@ export default function Projects() {
                 <Typography sx={{ paddingTop: "10px", fontSize: "13px" }}>
                   {project.description}
                 </Typography>
-                <Button
-                  sx={{ mt: "10px" }}
-                  size="small"
-                  color="inherit"
-                  variant="outlined"
-                  startIcon={<GitHubIcon />}
-                  href={project.githubLink}
-                >
-                  Github
-                </Button>
+                {project.githubLink && (
+                  <Button
+                    sx={{ mt: "10px" }}
+                    size="small"
+                    color="inherit"
+                    variant="outlined"
+                    startIcon={<GitHubIcon />}
+                    href={project.githubLink}
+                  >
+                    Github
+                  </Button>
+                )}
               </CardContent>
             </Card>
           </Box>

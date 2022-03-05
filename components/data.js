@@ -41,9 +41,9 @@ export const data = {
   skills: [
     {
       firstTitle: "Back end programming languages & tools",
-      backend: ["Python", "Django Rest Framework"],
+      backend: ["Python", "Django"],
       secondTitle: "Front end programming languages & tools",
-      frontend: ["HTML", "CSS", "React JS", "Next JS", "Material UI"],
+      frontend: ["JavaScript", "React", "Next.js", "Material UI"],
     },
   ],
   experiences: [

@@ -59,5 +59,16 @@ export const data = {
         "Built a UI/UX front-end web and back-end server of Korean dating web application using React JS and Django rest framework. Built admin app and integrated with the user interface.",
       ],
     },
+    {
+      name: "2. Smart Money System",
+      link: "",
+      title: "Fullstack software engineer intern",
+      period: "2022.03 ~ 2022.06",
+      description: [
+        "Supported development on redesigning the main app of safe transaction system between the users which has arbitrations system when any problems occur between the users when sending and receiving money.",
+        "Developed a new survey component which lead users to the question based on the answers they have chosen automatically using Flask, Vue.js and MySQL for the database.",
+        "Built a new website both front and back for the arbitrators to see the requests from the users and do their job using Express.js and Vue.js.",
+      ],
+    },
   ],
 };

@@ -61,7 +61,7 @@ export const data = {
     },
     {
       name: "2. Smart Money System",
-      link: "",
+      link: "http://smartmoneysystem.top/",
       title: "Fullstack software engineer intern",
       period: "2022.03 ~ 2022.06",
       description: [

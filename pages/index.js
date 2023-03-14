@@ -42,7 +42,7 @@ export default function Home() {
           🧑‍💻
         </Typography>
         <Typography className={classes.typography} variant="h4">
-          I am Kevin, a software engineer, <br /> based in Seoul, South Korea.
+          I am Jeongho, a software engineer, <br /> based in Seoul, South Korea.
         </Typography>
         <Typography
           variant="h6"
